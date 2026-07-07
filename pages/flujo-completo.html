@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Flujo completo de Git y GitHub explicado paso a paso.">
+  <title>Flujo completo de Git y GitHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/flujo-completo.css">
+  <script src="../assets/js/flujo-completo.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+  <header class="page-header">
+    <nav class="site-nav" aria-label="Principal">
+      <a class="brand" href="../index.html">Git y GitHub</a>
+      <ul class="nav-list">
+        <li><a href="git-vs-github.html">Git vs GitHub</a></li>
+        <li><a href="conceptos-clave.html">Conceptos clave</a></li>
+        <li><a href="fork-y-plantillas.html">Fork y plantillas</a></li>
+        <li><a aria-current="page" href="flujo-completo.html">Flujo completo</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-copy">
+      <p class="eyebrow">Bloque 4</p>
+      <h1>Flujo completo de Git y GitHub</h1>
+      <p>
+        Esta secuencia resume el recorrido habitual para trabajar con un proyecto y
+        publicarlo o compartirlo en GitHub.
+      </p>
+    </div>
+  </header>
+
+  <main id="contenido" class="content-layout">
+    <section class="flow-section" aria-labelledby="flujo-title">
+      <h2 id="flujo-title">Paso a paso</h2>
+      <ol class="flow-list">
+        <li>
+          <h3>1. Crear o clonar el repositorio</h3>
+          <p>Empiezas con un proyecto nuevo o descargas uno ya existente a tu equipo.</p>
+        </li>
+        <li>
+          <h3>2. Editar archivos</h3>
+          <p>Realizas cambios en HTML, CSS, JS u otros archivos del proyecto.</p>
+        </li>
+        <li>
+          <h3>3. Preparar cambios</h3>
+          <p>Usas <code>git add</code> para indicar que archivos quieres incluir en el proximo commit.</p>
+        </li>
+        <li>
+          <h3>4. Guardar con commit</h3>
+          <p>Usas <code>git commit -m</code> con un mensaje corto y descriptivo.</p>
+        </li>
+        <li>
+          <h3>5. Sincronizar con GitHub</h3>
+          <p>Usas <code>git push</code> para subir cambios y <code>git pull</code> para traer actualizaciones.</p>
+        </li>
+        <li>
+          <h3>6. Compartir o revisar</h3>
+          <p>Desde GitHub puedes abrir pull requests, revisar codigo o publicar con GitHub Pages.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="content-panel" aria-labelledby="comandos-title">
+      <h2 id="comandos-title">Comandos minimos para recordar</h2>
+      <div class="command-list" role="list">
+        <p role="listitem"><code>git status</code> revisa el estado del repositorio.</p>
+        <p role="listitem"><code>git add .</code> prepara cambios para commit.</p>
+        <p role="listitem"><code>git commit -m "mensaje"</code> guarda un punto del historial.</p>
+        <p role="listitem"><code>git push</code> sube cambios al remoto.</p>
+        <p role="listitem"><code>git pull</code> descarga cambios del remoto.</p>
+      </div>
+    </section>
+
+    <section class="commit-practices" aria-labelledby="practicas-commit-title">
+      <h2 id="practicas-commit-title">Buenas y malas practicas en mensajes de commit</h2>
+      <p class="commit-practices-lead">
+        Un mensaje de commit debe explicar que cambio se hizo. Eso facilita revisar,
+        depurar y entender el historial del proyecto con el paso del tiempo.
+      </p>
+
+      <div class="practice-grid">
+        <article class="practice-card practice-card-good" aria-labelledby="buenos-title">
+          <h3 id="buenos-title">Buenos mensajes de commit</h3>
+          <ul>
+            <li><span aria-hidden="true">✓</span> Anado formulario de contacto</li>
+            <li><span aria-hidden="true">✓</span> Corrijo error en menu movil</li>
+            <li><span aria-hidden="true">✓</span> Primera version del layout</li>
+          </ul>
+        </article>
+
+        <article class="practice-card practice-card-bad" aria-labelledby="malos-title">
+          <h3 id="malos-title">Malos mensajes de commit</h3>
+          <ul>
+            <li><span aria-hidden="true">✗</span> cambios</li>
+            <li><span aria-hidden="true">✗</span> arreglo cosas</li>
+            <li><span aria-hidden="true">✗</span> asdfgh</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-panel" aria-labelledby="cierre-title">
+      <h2 id="cierre-title">Mensaje final para clase</h2>
+      <p>
+        El objetivo no es memorizar todos los comandos a la vez, sino entender el
+        orden del flujo y practicarlo hasta que se vuelva natural.
+      </p>
+    </section>
+
+    <nav class="pager" aria-label="Navegacion entre temas">
+      <a href="fork-y-plantillas.html">Anterior: fork y plantillas</a>
+      <a href="../index.html">Volver al resumen</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> Material para clase.</p>
+  </footer>
+</body>
+</html>

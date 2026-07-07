@@ -1,0 +1,170 @@
+:root {
+	--bg: #f1f5ff;
+	--surface: #ffffff;
+	--surface-soft: #f7f9ff;
+	--ink: #172033;
+	--muted: #58627a;
+	--accent: #1d4ed8;
+	--line: #d8e2ff;
+	--shadow: 0 18px 42px rgba(23, 32, 51, 0.1);
+	--max-width: 1080px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Source Sans 3", sans-serif;
+	background: linear-gradient(180deg, #eef3ff 0%, #fbfcff 100%);
+	color: var(--ink);
+	line-height: 1.6;
+}
+
+a {
+	color: inherit;
+}
+
+a:focus-visible {
+	outline: 3px solid #1e3a8a;
+	outline-offset: 4px;
+}
+
+.skip-link {
+	position: absolute;
+	top: -3rem;
+	left: 1rem;
+	background: var(--ink);
+	color: #fff;
+	padding: 0.75rem 1rem;
+}
+
+.skip-link:focus {
+	top: 0;
+}
+
+.page-header,
+.content-layout,
+.site-footer {
+	padding-inline: 1.25rem;
+}
+
+.site-nav,
+.hero-copy,
+.content-layout,
+.site-footer {
+	max-inline-size: 1080px;
+	margin: 0 auto;
+}
+
+.site-nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 1rem;
+	padding-block: 1.25rem;
+}
+
+.brand,
+h1,
+h2,
+h3 {
+	font-family: "Space Grotesk", sans-serif;
+}
+
+.brand {
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.nav-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-list a {
+	text-decoration: none;
+	padding: 0.45rem 0.8rem;
+	border-radius: 999px;
+}
+
+.nav-list a[aria-current="page"] {
+	background: var(--accent);
+	color: #fff;
+}
+
+.hero-copy {
+	padding-block: 2.5rem 3rem;
+}
+
+.eyebrow {
+	margin: 0 0 0.5rem;
+	color: var(--accent);
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+}
+
+h1 {
+	font-size: clamp(2rem, 4vw, 3.8rem);
+	margin: 0 0 0.75rem;
+}
+
+.content-layout {
+	display: grid;
+	gap: 1.25rem;
+	padding-block-end: 2.5rem;
+}
+
+.two-column,
+.content-panel {
+	background: var(--surface);
+	border: 1px solid var(--line);
+	border-radius: 20px;
+	box-shadow: var(--shadow);
+	padding: 1.5rem;
+}
+
+.two-column {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1rem;
+}
+
+.two-column > h2 {
+	grid-column: 1 / -1;
+	margin-bottom: 0;
+}
+
+.info-card {
+	background: var(--surface-soft);
+	border: 1px solid var(--line);
+	border-radius: 16px;
+	padding: 1.2rem;
+}
+
+.usage-list {
+	padding-left: 1.25rem;
+	color: var(--muted);
+}
+
+.content-panel p {
+	color: var(--muted);
+}
+
+.pager {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.pager a {
+	color: var(--accent);
+	font-weight: 700;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explicacion clara de la diferencia entre Git y GitHub.">
+  <title>Git vs GitHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/git-vs-github.css">
+  <script src="../assets/js/git-vs-github.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+  <header class="page-header">
+    <nav class="site-nav" aria-label="Principal">
+      <a class="brand" href="../index.html">Git y GitHub</a>
+      <ul class="nav-list">
+        <li><a aria-current="page" href="git-vs-github.html">Git vs GitHub</a></li>
+        <li><a href="conceptos-clave.html">Conceptos clave</a></li>
+        <li><a href="fork-y-plantillas.html">Fork y plantillas</a></li>
+        <li><a href="flujo-completo.html">Flujo completo</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-copy">
+      <p class="eyebrow">Bloque 1</p>
+      <h1>Git vs GitHub</h1>
+      <p>
+        Antes de usar comandos, hace falta distinguir con precision que hace cada
+        herramienta y por que suelen usarse juntas.
+      </p>
+    </div>
+  </header>
+
+  <main id="contenido" class="content-layout">
+    <aside class="page-summary" aria-labelledby="resumen-lateral">
+      <h2 id="resumen-lateral">En una frase</h2>
+      <p>Git guarda el historial de cambios; GitHub permite compartirlo y colaborar.</p>
+    </aside>
+
+    <section class="content-panel" aria-labelledby="comparacion-title">
+      <h2 id="comparacion-title">Comparacion directa</h2>
+      <div class="comparison-grid">
+        <article>
+          <h3>Git</h3>
+          <ul>
+            <li>Es un sistema de control de versiones.</li>
+            <li>Se instala y funciona en tu computadora.</li>
+            <li>Permite registrar cambios, crear ramas y volver a versiones previas.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>GitHub</h3>
+          <ul>
+            <li>Es una plataforma para alojar repositorios Git.</li>
+            <li>Permite colaborar, revisar codigo y publicar proyectos.</li>
+            <li>Agrega herramientas como pull requests, issues y GitHub Pages.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-panel" aria-labelledby="analogia-title">
+      <h2 id="analogia-title">Analogia sencilla para clase</h2>
+      <p>
+        Puedes explicar Git como el historial de versiones de un documento y GitHub
+        como el lugar en internet donde ese documento se comparte, se comenta y se coordina.
+      </p>
+    </section>
+
+    <section class="content-panel" aria-labelledby="casos-title">
+      <h2 id="casos-title">Cuando usamos cada uno</h2>
+      <ul class="check-list">
+        <li>Usa Git para guardar avances de forma ordenada y local.</li>
+        <li>Usa GitHub para respaldar el proyecto y trabajar con otras personas.</li>
+        <li>Usa ambos cuando quieras un flujo profesional y repetible.</li>
+      </ul>
+    </section>
+
+    <section class="content-panel" aria-labelledby="importancia-title">
+      <h2 id="importancia-title">Por que GitHub importa mas alla de subir codigo</h2>
+      <div class="context-grid">
+        <article class="context-card">
+          <h3>Para el bootcamp</h3>
+          <p>
+            En el bootcamp, cada proyecto debe quedar subido a GitHub porque ese es
+            el punto de revision de mentores y profesorado. Si no haces commits y no
+            subes los cambios al repositorio, el proyecto practicamente no existe
+            como entrega revisable.
+          </p>
+        </article>
+        <article class="context-card">
+          <h3>Para la carrera profesional</h3>
+          <p>
+            GitHub tambien funciona como portfolio tecnico. Muchas personas de
+            reclutamiento revisan el perfil para entender en que has trabajado, que
+            tecnologias tocas y con que constancia construyes proyectos.
+          </p>
+        </article>
+        <article class="context-card">
+          <h3>Para colaborar en equipo</h3>
+          <p>
+            En entornos reales, varias personas suben codigo al mismo repositorio en
+            GitHub. Git se encarga de versionar los cambios y, si hay solapamientos,
+            ofrece mecanismos para detectar y resolver conflictos de forma controlada.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <nav class="pager" aria-label="Navegacion entre temas">
+      <a href="../index.html">Volver al resumen</a>
+      <a href="conceptos-clave.html">Siguiente: conceptos clave</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> Material para clase.</p>
+  </footer>
+</body>
+</html>

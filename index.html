@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Resumen de Git y GitHub para una clase de programacion con enfoque practico y accesible.">
+  <title>Git y GitHub | Clase de Programacion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <script src="assets/js/index.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+  <header class="hero">
+    <nav class="site-nav" aria-label="Principal">
+      <a class="brand" href="index.html">Git y GitHub</a>
+      <ul class="nav-list">
+        <li><a href="pages/git-vs-github.html">Git vs GitHub</a></li>
+        <li><a href="pages/conceptos-clave.html">Conceptos clave</a></li>
+        <li><a href="pages/fork-y-plantillas.html">Fork y plantillas</a></li>
+        <li><a href="pages/flujo-completo.html">Flujo completo</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero-copy" aria-labelledby="titulo-principal">
+      <p class="eyebrow">Material para GitHub Pages</p>
+      <h1 id="titulo-principal">Guia visual de Git y GitHub para clase</h1>
+      <p class="lead">
+        Un sitio introductorio para explicar conceptos, comandos y flujo de trabajo
+        con ejemplos claros, estructura ordenada y buena accesibilidad.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#resumen">Ver resumen</a>
+        <a class="button button-secondary" href="pages/flujo-completo.html">Ir al flujo completo</a>
+      </div>
+    </section>
+  </header>
+
+  <main id="contenido">
+    <section class="overview" id="resumen" aria-labelledby="resumen-title">
+      <div class="section-heading">
+        <p class="section-kicker">Resumen</p>
+        <h2 id="resumen-title">Temas que vamos a ver</h2>
+        <p>
+          La clase se organiza en cuatro bloques para pasar de la teoria basica a
+          un flujo completo de trabajo colaborativo.
+        </p>
+      </div>
+
+      <div class="topic-grid">
+        <article class="topic-card">
+          <h3>Git vs GitHub</h3>
+          <p>
+            Diferencia entre la herramienta de control de versiones y la plataforma
+            para alojar repositorios y colaborar en equipo.
+          </p>
+          <a href="pages/git-vs-github.html">Abrir tema</a>
+        </article>
+
+        <article class="topic-card">
+          <h3>Conceptos clave</h3>
+          <p>
+            Repositorio, commit, branch, merge, pull, push y otros terminos que se
+            usan en el dia a dia con Git y GitHub.
+          </p>
+          <a href="pages/conceptos-clave.html">Abrir tema</a>
+        </article>
+
+        <article class="topic-card">
+          <h3>Fork y plantillas</h3>
+          <p>
+            Como copiar proyectos, partir de plantillas y mantener un flujo claro
+            cuando trabajamos sobre codigo existente.
+          </p>
+          <a href="pages/fork-y-plantillas.html">Abrir tema</a>
+        </article>
+
+        <article class="topic-card">
+          <h3>Flujo completo</h3>
+          <p>
+            Desde crear o clonar un repositorio hasta subir cambios y compartirlos
+            en GitHub con buenas practicas.
+          </p>
+          <a href="pages/flujo-completo.html">Abrir tema</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="class-plan" aria-labelledby="plan-title">
+      <div class="section-heading">
+        <p class="section-kicker">Ruta de clase</p>
+        <h2 id="plan-title">Orden sugerido para explicar el contenido</h2>
+      </div>
+
+      <ol class="timeline">
+        <li>
+          <strong>Entender el problema:</strong> por que necesitamos controlar versiones.
+        </li>
+        <li>
+          <strong>Distinguir herramientas:</strong> Git gestiona cambios y GitHub facilita colaboracion.
+        </li>
+        <li>
+          <strong>Aprender el vocabulario:</strong> commits, ramas, merges, remotos y pull requests.
+        </li>
+        <li>
+          <strong>Practicar el flujo:</strong> crear, modificar, guardar, sincronizar y compartir.
+        </li>
+      </ol>
+    </section>
+
+    <section class="quick-notes" aria-labelledby="notas-title">
+      <div class="section-heading">
+        <p class="section-kicker">Puntos clave</p>
+        <h2 id="notas-title">Ideas que conviene reforzar durante la clase</h2>
+      </div>
+
+      <ul class="note-list">
+        <li>Git funciona localmente; GitHub funciona como plataforma remota.</li>
+        <li>Un commit registra un cambio con contexto e intencion.</li>
+        <li>Las ramas permiten experimentar sin romper la version principal.</li>
+        <li>Fork y plantillas sirven para partir de un proyecto ajeno o base.</li>
+        <li>Un flujo ordenado reduce errores y mejora la colaboracion.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Material de apoyo para clase de programacion.</p>
+    <p>&copy; <span id="current-year"></span> Git y GitHub.</p>
+  </footer>
+</body>
+</html>

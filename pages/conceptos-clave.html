@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conceptos esenciales de Git y GitHub para una clase introductoria.">
+  <title>Conceptos clave de Git y GitHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/conceptos-clave.css">
+  <script src="../assets/js/conceptos-clave.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+  <header class="page-header">
+    <nav class="site-nav" aria-label="Principal">
+      <a class="brand" href="../index.html">Git y GitHub</a>
+      <ul class="nav-list">
+        <li><a href="git-vs-github.html">Git vs GitHub</a></li>
+        <li><a aria-current="page" href="conceptos-clave.html">Conceptos clave</a></li>
+        <li><a href="fork-y-plantillas.html">Fork y plantillas</a></li>
+        <li><a href="flujo-completo.html">Flujo completo</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-copy">
+      <p class="eyebrow">Bloque 2</p>
+      <h1>Conceptos clave de Git y GitHub</h1>
+      <p>
+        Esta pagina resume el vocabulario basico que el grupo necesita dominar
+        antes de practicar comandos y colaboracion.
+      </p>
+    </div>
+  </header>
+
+  <main id="contenido" class="content-layout">
+    <section class="concept-grid" aria-labelledby="conceptos-title">
+      <h2 id="conceptos-title">Terminos fundamentales</h2>
+
+      <article class="concept-card">
+        <h3>Repositorio</h3>
+        <p>Carpeta del proyecto que incluye archivos y el historial de cambios.</p>
+      </article>
+
+      <article class="concept-card">
+        <h3>Commit</h3>
+        <p>Registro con mensaje que guarda un conjunto de cambios en un momento concreto.</p>
+      </article>
+
+      <article class="concept-card">
+        <h3>Branch</h3>
+        <p>Rama de trabajo que permite desarrollar sin afectar la linea principal.</p>
+      </article>
+
+      <article class="concept-card">
+        <h3>Merge</h3>
+        <p>Union de cambios entre ramas cuando un trabajo ya esta listo para integrarse.</p>
+      </article>
+
+      <article class="concept-card">
+        <h3>Push</h3>
+        <p>Envio de commits locales al repositorio remoto alojado en GitHub.</p>
+      </article>
+
+      <article class="concept-card">
+        <h3>Pull</h3>
+        <p>Descarga de cambios remotos para mantener la copia local actualizada.</p>
+      </article>
+    </section>
+
+    <section class="content-panel" aria-labelledby="relacion-title">
+      <h2 id="relacion-title">Como se relacionan entre si</h2>
+      <p>
+        El flujo habitual es modificar archivos, prepararlos, hacer un commit,
+        trabajar en una rama si hace falta y finalmente sincronizar con GitHub mediante push o pull.
+      </p>
+    </section>
+
+    <section class="visual-panel" aria-labelledby="visual-title">
+      <h2 id="visual-title">Vista rapida para explicar en clase</h2>
+
+      <article class="explain-card" aria-labelledby="repo-card-title">
+        <h3 id="repo-card-title">Repositorio (repo)</h3>
+        <div class="repo-row">
+          <p>La carpeta de tu proyecto + todo su historial de cambios.</p>
+          <p class="repo-flow" aria-label="Flujo del repositorio local a GitHub">
+            Repo local <span aria-hidden="true">→</span> git push <span aria-hidden="true">→</span> Repo en GitHub
+          </p>
+        </div>
+      </article>
+
+      <article class="explain-card" aria-labelledby="commit-card-title">
+        <h3 id="commit-card-title">Commit</h3>
+        <p>
+          Una foto del estado de tu proyecto en un momento concreto. Cada commit
+          tiene un mensaje que describe que cambiaste y te permite volver atras
+          si aparece un error.
+        </p>
+
+        <ol class="commit-timeline" aria-label="Ejemplo de historial de commits">
+          <li>Inicio proyecto</li>
+          <li>Añado HTML</li>
+          <li>Anado CSS</li>
+          <li>Arreglado bug en HTML</li>
+          <li>Version final</li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="content-panel" aria-labelledby="consejos-title">
+      <h2 id="consejos-title">Consejos para explicarlos en clase</h2>
+      <ul class="tip-list">
+        <li>Usa ejemplos concretos de cambios pequenos para explicar un commit.</li>
+        <li>Relaciona las ramas con versiones paralelas del mismo trabajo.</li>
+        <li>Evita mezclar demasiados conceptos en la primera practica.</li>
+      </ul>
+    </section>
+
+    <nav class="pager" aria-label="Navegacion entre temas">
+      <a href="git-vs-github.html">Anterior: Git vs GitHub</a>
+      <a href="fork-y-plantillas.html">Siguiente: fork y plantillas</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> Material para clase.</p>
+  </footer>
+</body>
+</html>

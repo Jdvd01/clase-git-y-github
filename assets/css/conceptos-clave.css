@@ -1,0 +1,280 @@
+:root {
+	--bg: #fcf7ef;
+	--surface: #ffffff;
+	--surface-soft: #fff8ee;
+	--ink: #1f2430;
+	--muted: #5f6470;
+	--accent: #c2410c;
+	--accent-soft: #fff0e7;
+	--line: #ead8c7;
+	--shadow: 0 18px 38px rgba(31, 36, 48, 0.1);
+	--max-width: 1080px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Source Sans 3", sans-serif;
+	background: linear-gradient(180deg, #fff6ea 0%, #fffdf8 100%);
+	color: var(--ink);
+	line-height: 1.6;
+}
+
+a {
+	color: inherit;
+}
+
+a:focus-visible {
+	outline: 3px solid #7c2d12;
+	outline-offset: 4px;
+}
+
+.skip-link {
+	position: absolute;
+	top: -3rem;
+	left: 1rem;
+	background: var(--ink);
+	color: #fff;
+	padding: 0.75rem 1rem;
+}
+
+.skip-link:focus {
+	top: 0;
+}
+
+.page-header,
+.content-layout,
+.site-footer {
+	padding-inline: 1.25rem;
+}
+
+.site-nav,
+.hero-copy,
+.content-layout,
+.site-footer {
+	max-inline-size: var(--max-width);
+	margin: 0 auto;
+}
+
+.site-nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 1rem;
+	padding-block: 1.25rem;
+}
+
+.brand,
+h1,
+h2,
+h3 {
+	font-family: "Space Grotesk", sans-serif;
+}
+
+.brand {
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.nav-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-list a {
+	text-decoration: none;
+	padding: 0.45rem 0.8rem;
+	border-radius: 999px;
+}
+
+.nav-list a[aria-current="page"] {
+	background: var(--accent);
+	color: #fff;
+}
+
+.hero-copy {
+	padding-block: 2.5rem 3rem;
+}
+
+.eyebrow {
+	margin: 0 0 0.5rem;
+	color: var(--accent);
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: clamp(2rem, 4vw, 3.8rem);
+	margin: 0 0 0.75rem;
+}
+
+.content-layout {
+	display: grid;
+	gap: 1.25rem;
+	padding-block-end: 2.5rem;
+}
+
+.concept-grid,
+.content-panel {
+	background: var(--surface);
+	border: 1px solid var(--line);
+	border-radius: 20px;
+	box-shadow: var(--shadow);
+	padding: 1.5rem;
+}
+
+.concept-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 1rem;
+}
+
+.concept-grid > h2 {
+	grid-column: 1 / -1;
+	margin-bottom: 0;
+}
+
+.concept-card {
+	background: var(--surface-soft);
+	border: 1px solid var(--line);
+	border-radius: 16px;
+	padding: 1.1rem;
+}
+
+.concept-card p,
+.content-panel p,
+.tip-list {
+	color: var(--muted);
+}
+
+.visual-panel {
+	background: var(--surface);
+	border: 1px solid var(--line);
+	border-radius: 20px;
+	box-shadow: var(--shadow);
+	padding: 1.5rem;
+	display: grid;
+	gap: 1rem;
+}
+
+.explain-card {
+	background: #ffffff;
+	border: 1px solid #d8e4fa;
+	border-left: 6px solid #3b82f6;
+	border-radius: 14px;
+	padding: 1.25rem;
+}
+
+.explain-card h3 {
+	margin-top: 0;
+	margin-bottom: 0.85rem;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	color: #2563eb;
+}
+
+.explain-card p {
+	margin: 0;
+	color: #374151;
+}
+
+.repo-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.repo-flow {
+	padding: 0.55rem 0.85rem;
+	background: #eaf2ff;
+	border: 1px solid #bfdbfe;
+	border-radius: 10px;
+	font-family: "Space Grotesk", sans-serif;
+	font-weight: 500;
+	color: #1d4ed8;
+	white-space: nowrap;
+}
+
+.commit-timeline {
+	margin: 1.3rem 0 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(5, minmax(95px, 1fr));
+	gap: 0.7rem;
+	position: relative;
+}
+
+.commit-timeline::before {
+	content: "";
+	position: absolute;
+	left: 6%;
+	right: 6%;
+	top: 18px;
+	height: 3px;
+	background: #60a5fa;
+}
+
+.commit-timeline li {
+	position: relative;
+	padding-top: 2.65rem;
+	text-align: center;
+	font-weight: 600;
+	color: #64748b;
+	line-height: 1.3;
+}
+
+.commit-timeline li::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	inline-size: 36px;
+	block-size: 36px;
+	border-radius: 50%;
+	background: #3b82f6;
+	box-shadow: 0 0 0 5px #eff6ff;
+}
+
+.tip-list {
+	padding-left: 1.25rem;
+}
+
+.pager {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.pager a {
+	color: var(--accent);
+	font-weight: 700;
+}
+
+@media (max-width: 900px) {
+	.commit-timeline {
+		grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+	}
+
+	.commit-timeline::before {
+		display: none;
+	}
+}
+
+@media (max-width: 620px) {
+	.repo-flow {
+		white-space: normal;
+	}
+}

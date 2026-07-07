@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explicacion de fork y uso de plantillas en GitHub.">
+  <title>Fork y Plantillas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/fork-y-plantillas.css">
+  <script src="../assets/js/fork-y-plantillas.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+  <header class="page-header">
+    <nav class="site-nav" aria-label="Principal">
+      <a class="brand" href="../index.html">Git y GitHub</a>
+      <ul class="nav-list">
+        <li><a href="git-vs-github.html">Git vs GitHub</a></li>
+        <li><a href="conceptos-clave.html">Conceptos clave</a></li>
+        <li><a aria-current="page" href="fork-y-plantillas.html">Fork y plantillas</a></li>
+        <li><a href="flujo-completo.html">Flujo completo</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-copy">
+      <p class="eyebrow">Bloque 3</p>
+      <h1>Fork y plantillas</h1>
+      <p>
+        Dos formas comunes de empezar un proyecto a partir de otro trabajo ya existente.
+      </p>
+    </div>
+  </header>
+
+  <main id="contenido" class="content-layout">
+    <section class="two-column" aria-labelledby="tema-title">
+      <h2 id="tema-title">Diferencia principal</h2>
+      <article class="info-card">
+        <h3>Fork</h3>
+        <p>
+          Crea una copia de un repositorio en tu propia cuenta de GitHub. Sirve para
+          proponer cambios a un proyecto existente sin tocar el original directamente.
+        </p>
+      </article>
+
+      <article class="info-card">
+        <h3>Plantilla</h3>
+        <p>
+          Genera un nuevo repositorio usando una base preconfigurada. Es util para
+          tareas, ejercicios, proyectos iniciales o entregas con una estructura comun.
+        </p>
+      </article>
+    </section>
+
+    <section class="content-panel" aria-labelledby="uso-title">
+      <h2 id="uso-title">Cuando conviene usar cada uno</h2>
+      <ul class="usage-list">
+        <li>Fork cuando el objetivo es contribuir sobre un repositorio ajeno.</li>
+        <li>Plantilla cuando quieres empezar desde una base sin conservar el vinculo de colaboracion.</li>
+        <li>En clase, las plantillas funcionan muy bien para repartir un proyecto inicial a todo el grupo.</li>
+      </ul>
+    </section>
+
+    <section class="content-panel" aria-labelledby="practica-title">
+      <h2 id="practica-title">Ejemplo de practica docente</h2>
+      <p>
+        Puedes compartir un repositorio base con HTML, CSS y JS. El alumnado crea su
+        propio repositorio desde la plantilla, trabaja localmente con Git y luego publica en GitHub Pages.
+      </p>
+    </section>
+
+    <nav class="pager" aria-label="Navegacion entre temas">
+      <a href="conceptos-clave.html">Anterior: conceptos clave</a>
+      <a href="flujo-completo.html">Siguiente: flujo completo</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> Material para clase.</p>
+  </footer>
+</body>
+</html>
